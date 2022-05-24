@@ -15,23 +15,26 @@ public class Mae {
     @Id
     @Column(name = "cpf_mae", length = 11)
     @NotNull
-    int cpf;
+    private int cpf;
 
     @Column(name = "nome_mae", length = 100)
     @NotNull
-    String nome;
+    private String nome;
 
     @Column(name = "endereco", length = 100)
     @NotNull
-    String endereco;
+    private String endereco;
+
+    @Column(name = "complemento", length = 20)
+    private String complemento;
 
     @Column(name = "telefone", length = 11)
     @NotNull
-    int telefone;
+    private int telefone;
 
     @Column(name = "nascimento_mae")
     @NotNull
-    LocalDate nascimento;
+    private LocalDate nascimento;
 
     // ---------------------------------------------------------------
 
